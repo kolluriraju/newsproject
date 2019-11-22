@@ -1,0 +1,22 @@
+h1{
+text-align: center;
+ color: red;
+font-size: 30px;
+}
+.container.jumbotron
+{
+  background: red;
+  color: white;
+  margin-top: 150px;
+}
+body
+{
+  background: url(https://images.unsplash.com/photo-1568854861331-678b9b05cf02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)
+
+}
+img{
+  height: 250px;
+  width: 40%
+  border:5px solid red;
+
+}

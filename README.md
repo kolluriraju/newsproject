@@ -1,0 +1,2 @@
+# newsproject
+ python django

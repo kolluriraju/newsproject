@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="{%static "css/demo3.css" %}">    <title></title>
+  </head>
+  <body>
+    <h1>Student infoormation</h1>
+    {% if student_list %}'
+    <table>
+      <thead>
+        <th>student name</th>
+        <th>student marks</th>
+        <th>student subject</th>
+        <th>student ranks</th>
+
+      </thead>
+      {% for stu in student_list%}
+      <tr>
+        <td>{{stu.name}}</td>
+        <td>{{stu.marks}}</td>
+        <td>{{stu.subject}}</td>
+        <td>{{stu.rank}}</td>
+</tr>
+{% endfor %}
+    </table>
+    {%else%}
+    <p>No students found</p>
+    {%endif%}
+  </body>
+</html>
